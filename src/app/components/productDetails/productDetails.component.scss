@@ -1,0 +1,62 @@
+.product-container {
+  border: 1px solid teal;
+  border-radius: 0.6rem;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 1.8rem;
+
+  label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    font-size: 1.8rem;
+  }
+
+  input:invalid {
+    border-color: #dc3545;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+
+  button[type="submit"] {
+    background-color: teal;
+    color: white;
+  }
+
+  button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  button[type="button"] {
+    background-color: #6c757d;
+    color: white;
+  }
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.save {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}

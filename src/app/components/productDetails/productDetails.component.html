@@ -1,0 +1,14 @@
+<div class="product-container">
+  <img [src]="productDetails.image" alt="{{productDetails.name}}"/>
+  <label for="productName">Name</label>
+  <input type="text" id="productName" value="{{productDetails.name}}">
+  <label for="productDescription">Description</label>
+  <textarea name="productDescription" id="productDescription">
+    {{productDetails.description}}
+  </textarea>
+  <label for="price">Price</label>
+  <span><input type="text" value="{{productDetails.price}}"> $</span>
+  <div class="save">
+    <button>Save</button>
+  </div>
+</div>

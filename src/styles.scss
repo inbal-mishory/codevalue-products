@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+/* Reset css curtesy of https://www.joshwcomeau.com/  */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&wght@400&wght@600&wght@700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body, html {
+  font-size: 10px;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
